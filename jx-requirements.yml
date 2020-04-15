@@ -1,7 +1,6 @@
 autoUpdate:
   enabled: false
   schedule: ""
-bootConfigURL: https://github.com/cb-kubecd/environment-bootv3-cheese2.git
 cluster:
   clusterName: bootv3-cheese2
   devEnvApprovers:
@@ -10,7 +9,7 @@ cluster:
   gitKind: github
   gitName: github
   gitServer: https://github.com
-  namespace: jx-cheese
+  namespace: jx
   project: jstrachan-multicluster
   provider: gke
   registry: gcr.io
@@ -28,10 +27,9 @@ environments:
       production: false
   key: dev
   owner: cb-kubecd
-  promotionStrategy: Auto
+  promotionStrategy: Manual
   remoteCluster: true
   repository: environment-bootv3-cheese2
-gitops: true
 helmfile: true
 ingress:
   domain: ""
@@ -41,7 +39,6 @@ ingress:
     email: ""
     enabled: false
     production: false
-kaniko: true
 repository: nexus
 secretStorage: vault
 storage:
@@ -59,9 +56,9 @@ storage:
     url: ""
 vault: {}
 velero:
-  schedule: 0 * * * *
-  ttl: 720h0m0s
+  schedule: ""
+  ttl: ""
 versionStream:
   ref: v2.0.125
-  url: https://github.com/jenkins-x/jenkins-x-versions.git
+  url: ""
 webhook: lighthouse
