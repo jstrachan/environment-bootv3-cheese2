@@ -6,7 +6,7 @@ apps:
 - name: dev/v2-nodey3
   version: 0.0.10
 - name: dev/v2-nodey
-  version: 0.0.10
+  version: 0.0.12
 repositories:
 - name: dev
   url: http://chartmuseum-jx.35.205.96.40.nip.io
